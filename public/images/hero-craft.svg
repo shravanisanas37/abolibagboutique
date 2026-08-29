@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Deep Warm Espresso / Maroon Background -->
+    <radialGradient id="bgGrad3" cx="70%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#471424" />
+      <stop offset="50%" stop-color="#2D0B16" />
+      <stop offset="100%" stop-color="#19040B" />
+    </radialGradient>
+
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="goldCraft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C2" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA771C" />
+      <stop offset="100%" stop-color="#F3E5AB" />
+    </linearGradient>
+
+    <!-- Silk Emerald & Magenta accents -->
+    <linearGradient id="silkEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00897B" />
+      <stop offset="100%" stop-color="#004D40" />
+    </linearGradient>
+
+    <linearGradient id="silkRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2185B" />
+      <stop offset="100%" stop-color="#880E4F" />
+    </linearGradient>
+
+    <pattern id="craftPattern" width="80" height="80" patternUnits="userSpaceOnUse" opacity="0.07">
+      <path d="M0,40 L40,0 L80,40 L40,80 Z" fill="none" stroke="#C9A227" stroke-width="1"/>
+      <circle cx="40" cy="40" r="6" fill="#C9A227"/>
+    </pattern>
+
+    <filter id="shadowCraft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad3)"/>
+  <rect width="1600" height="900" fill="url(#craftPattern)"/>
+
+  <!-- Warm Aura Glows -->
+  <circle cx="1180" cy="450" r="400" fill="#D4AF37" opacity="0.12" filter="blur(65px)"/>
+  <circle cx="1400" cy="320" r="280" fill="#B23A6B" opacity="0.15" filter="blur(55px)"/>
+
+  <!-- Artisanal Composition: Bridal Ensembles, Weaves & Gold Motifs -->
+  <g transform="translate(1160, 440)" filter="url(#shadowCraft)">
+    <!-- Ornate Outer Gold Ring -->
+    <circle cx="0" cy="0" r="320" fill="none" stroke="url(#goldCraft)" stroke-width="2" opacity="0.4" stroke-dasharray="6 6"/>
+    <circle cx="0" cy="0" r="290" fill="none" stroke="url(#goldCraft)" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Silk Fabric Weave Texture Arc -->
+    <path d="M-220,120 Q0,260 220,120 Q0,220 -220,120 Z" fill="url(#silkRose)" opacity="0.75" stroke="url(#goldCraft)" stroke-width="2"/>
+    <path d="M-200,80 Q0,210 200,80 Q0,170 -200,80 Z" fill="url(#silkEmerald)" opacity="0.8" stroke="url(#goldCraft)" stroke-width="2"/>
+
+    <!-- Central Bridal Envelope Bag & Jewellery Pair -->
+    <g transform="translate(-40, -40) scale(1.1)">
+      <!-- Clutch -->
+      <rect x="-90" y="-60" width="180" height="120" rx="16" fill="#8E142F" stroke="url(#goldCraft)" stroke-width="3"/>
+      <path d="M-90,-60 L0,10 L90,-60 Z" fill="#600A1C" stroke="url(#goldCraft)" stroke-width="2"/>
+      <circle cx="0" cy="10" r="12" fill="url(#goldCraft)"/>
+      <circle cx="0" cy="10" r="6" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Surrounding Gold Filigree Motifs -->
+    <g transform="translate(80, 20) scale(0.9)">
+      <circle cx="40" cy="-40" r="32" fill="none" stroke="url(#goldCraft)" stroke-width="3"/>
+      <circle cx="40" cy="-40" r="16" fill="url(#goldCraft)" opacity="0.6"/>
+      <circle cx="40" cy="-40" r="6" fill="#FFFFFF"/>
+      <!-- Hanging Pearl Tassels -->
+      <circle cx="28" cy="4" r="4.5" fill="#FFFFFF"/>
+      <circle cx="40" cy="8" r="5" fill="#FFFFFF"/>
+      <circle cx="52" cy="4" r="4.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Left Side Text Darkening Gradient -->
+  <rect width="900" height="900" fill="url(#bgGrad3)" opacity="0.75"/>
+</svg>

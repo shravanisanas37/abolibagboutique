@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad1" cx="65%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#5E182D" />
+      <stop offset="45%" stop-color="#401221" />
+      <stop offset="100%" stop-color="#240A13" />
+    </radialGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#9A7B1C" />
+      <stop offset="100%" stop-color="#E5C358" />
+    </linearGradient>
+
+    <!-- Teal Silk Gradient for Potli -->
+    <radialGradient id="tealSilk" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#168F85" />
+      <stop offset="50%" stop-color="#0E5E57" />
+      <stop offset="100%" stop-color="#063834" />
+    </radialGradient>
+
+    <!-- Crimson Velvet for Clutch -->
+    <linearGradient id="crimsonVelvet" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#A81D3C" />
+      <stop offset="60%" stop-color="#730F25" />
+      <stop offset="100%" stop-color="#420613" />
+    </linearGradient>
+
+    <!-- Subtle Paisley Background Pattern -->
+    <pattern id="damaskPattern" width="120" height="120" patternUnits="userSpaceOnUse" opacity="0.08">
+      <path d="M60,20 C80,35 90,60 70,80 C50,100 20,80 35,50 C45,30 55,25 60,20 Z" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+      <circle cx="60" cy="55" r="8" fill="#C9A227"/>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#C9A227" stroke-width="1"/>
+      <circle cx="120" cy="120" r="10" fill="none" stroke="#C9A227" stroke-width="1"/>
+    </pattern>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="luxuryShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rich Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad1)"/>
+  <rect width="1600" height="900" fill="url(#damaskPattern)"/>
+
+  <!-- Subtle Atmospheric Glows -->
+  <circle cx="1150" cy="450" r="420" fill="#C9A227" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="1380" cy="300" r="280" fill="#B23A6B" opacity="0.15" filter="blur(50px)"/>
+
+  <!-- Ornate Decorative Hanging Arch on Right Side -->
+  <g transform="translate(1150, 420)" filter="url(#luxuryShadow)">
+    <!-- Ornate Golden Mandala Background Plate -->
+    <circle cx="0" cy="0" r="320" fill="none" stroke="url(#goldShine)" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+    <circle cx="0" cy="0" r="300" fill="none" stroke="url(#goldShine)" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="0" cy="0" r="260" fill="none" stroke="url(#goldShine)" stroke-width="1" opacity="0.3"/>
+
+    <!-- Handcrafted Royal Potli Bag Illustration -->
+    <g transform="translate(-110, -30) scale(1.15)">
+      <!-- Drawstring Neck Ribbons -->
+      <path d="M-30,-120 C-10,-140 10,-140 30,-120 C45,-105 -45,-105 -30,-120 Z" fill="url(#tealSilk)" stroke="url(#goldShine)" stroke-width="2"/>
+      
+      <!-- Gold Cord & Hanging Latkans -->
+      <path d="M-25,-110 Q-60,-40 -50,30" fill="none" stroke="url(#goldShine)" stroke-width="3"/>
+      <circle cx="-50" cy="35" r="8" fill="url(#goldShine)"/>
+      <path d="M-50,43 L-55,65 L-45,65 Z" fill="url(#goldShine)"/>
+      
+      <path d="M25,-110 Q60,-40 50,30" fill="none" stroke="url(#goldShine)" stroke-width="3"/>
+      <circle cx="50" cy="35" r="8" fill="url(#goldShine)"/>
+      <path d="M50,43 L45,65 L55,65 Z" fill="url(#goldShine)"/>
+
+      <!-- Main Potli Body -->
+      <path d="M-35,-105 C-90,-70 -115,20 -80,95 C-50,150 50,150 80,95 C115,20 90,-70 35,-105 Z" 
+            fill="url(#tealSilk)" stroke="url(#goldShine)" stroke-width="3"/>
+
+      <!-- Gold Zardosi Floral Embroidery Detailing on Potli -->
+      <g fill="none" stroke="url(#goldShine)" stroke-width="2">
+        <circle cx="0" cy="20" r="22"/>
+        <path d="M0,0 C8,10 8,30 0,40 C-8,30 -8,10 0,0 Z" fill="url(#goldShine)" opacity="0.8"/>
+        <path d="M-20,20 C-10,28 10,28 20,20 C10,12 -10,12 -20,20 Z" fill="url(#goldShine)" opacity="0.8"/>
+        <!-- Pearl drops along rim -->
+        <circle cx="-60" cy="80" r="4" fill="#FFFFFF"/>
+        <circle cx="-35" cy="115" r="4" fill="#FFFFFF"/>
+        <circle cx="0" cy="130" r="5" fill="#FFFFFF"/>
+        <circle cx="35" cy="115" r="4" fill="#FFFFFF"/>
+        <circle cx="60" cy="80" r="4" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <!-- Luxury Crimson Bridal Clutch Illustration -->
+    <g transform="translate(100, 60) rotate(-12) scale(1.05)">
+      <!-- Clutch Body -->
+      <rect x="-110" y="-70" width="220" height="140" rx="20" 
+            fill="url(#crimsonVelvet)" stroke="url(#goldShine)" stroke-width="3"/>
+      <!-- Flap -->
+      <path d="M-110,-70 L0,20 L110,-70 Z" fill="#8E142F" stroke="url(#goldShine)" stroke-width="2"/>
+      
+      <!-- Crystal Gold Clasp -->
+      <circle cx="0" cy="20" r="14" fill="url(#goldShine)"/>
+      <circle cx="0" cy="20" r="7" fill="#FFFFFF"/>
+
+      <!-- Delicate Zardosi Border Trimming -->
+      <line x1="-95" y1="52" x2="95" y2="52" stroke="url(#goldShine)" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <line x1="-95" y1="56" x2="95" y2="56" stroke="url(#goldShine)" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Left Side Darkening Gradient for Text Contrast -->
+  <rect width="900" height="900" fill="url(#bgGrad1)" opacity="0.75"/>
+</svg>

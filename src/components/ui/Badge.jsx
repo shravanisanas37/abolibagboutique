@@ -1,0 +1,76 @@
+import React from 'react';
+
+export function Badge({ variant = 'new', children, className = '', style = {} }) {
+  const getBadgeStyle = () => {
+    switch (variant?.toLowerCase()) {
+      case 'new':
+        return {
+          backgroundColor: 'var(--color-accent)',
+          color: '#2B1B14',
+          border: 'none'
+        };
+      case 'sale':
+        return {
+          backgroundColor: 'var(--color-cta)',
+          color: '#FFFFFF',
+          border: 'none'
+        };
+      case 'bestseller':
+        return {
+          backgroundColor: 'var(--color-primary)',
+          color: '#FFFFFF',
+          border: 'none'
+        };
+      case 'out_of_stock':
+        return {
+          backgroundColor: '#5A534E',
+          color: '#FFFFFF',
+          border: 'none'
+        };
+      case 'in_stock':
+        return {
+          backgroundColor: 'rgba(46, 125, 50, 0.12)',
+          color: 'var(--color-success)',
+          border: '1px solid rgba(46, 125, 50, 0.25)'
+        };
+      case 'featured':
+        return {
+          backgroundColor: 'rgba(201, 162, 39, 0.18)',
+          color: '#8A680C',
+          border: '1px solid rgba(201, 162, 39, 0.4)'
+        };
+      default:
+        return {
+          backgroundColor: 'var(--color-surface-alt)',
+          color: 'var(--color-text-primary)',
+          border: '1px solid var(--color-border)'
+        };
+    }
+  };
+
+  const label = children || (variant === 'out_of_stock' ? 'Out of Stock' : variant === 'in_stock' ? 'In Stock' : variant);
+
+  return (
+    <span
+      className={`boutique-badge ${className}`}
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '3px 10px',
+        borderRadius: 'var(--radius-pill)',
+        fontSize: '11px',
+        fontWeight: 'var(--weight-bold)',
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+        lineHeight: 1.3,
+        whiteSpace: 'nowrap',
+        boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
+        ...getBadgeStyle(),
+        ...style
+      }}
+    >
+      {label}
+    </span>
+  );
+}
